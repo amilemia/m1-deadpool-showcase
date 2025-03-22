@@ -9,28 +9,32 @@
         <title>Deadpool - Marvel's Merc with a Mouth</title>
     </head>
     <body>
-        <header>
+        <header role="banner">
             <figure>
                 <img src="img/deadpool.jpg" alt="Deadpool Profile Picture - Marvel Antihero" width="300" height="300" loading="lazy">
                 <figcaption>Deadpool Profile Picture - Marvel Antihero</figcaption>
             </figure>
             <h1>Deadpool</h1>
             <h2><em>The Merc with a Mouth</em></h2>
-            <nav>
+            <nav role="navigation" aria-label="Main Navigation">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" aria-label="Go to Home section">Home</a></li>
+                    <li><a href="#" aria-label="Learn more About Deadpool">About</a></li>
+                    <li><a href="#" aria-label="Contact Deadpool">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
+        <main role="main">
             <section>
-                <h2><strong>Deadpool</strong></h2>
+                <header>
+                    <h2><strong>Deadpool</strong></h2>
+                </header>
                 <p><strong>Deadpool</strong> is a fictional character appearing in American comic books published by Marvel Comics. Created by writer <em>Fabian Nicieza</em> and artist/writer <em>Rob Liefeld</em>, the character first appeared in <strong>The New Mutants #98</strong> (cover-dated February 1991). Initially, <strong>Deadpool</strong> was depicted as a supervillain when he made his first appearance in <strong>The New Mutants</strong> and later in issues of <strong>X-Force</strong>, but later evolved into his more recognizable antiheroic persona. <strong>Deadpool</strong>, whose real name is <strong>Wade Winston Wilson</strong>, is a disfigured mercenary with the superhuman ability of an accelerated healing factor and physical prowess. The character is known as the <em>"Merc with a Mouth"</em> because of his tendency to talk and joke constantly, including breaking the <strong>fourth wall</strong> for humorous effect and running gags.</p>
             </section>
             <section>
-                <h2>Deadpool's Abilities</h2>
+                <header>
+                    <h2>Deadpool's Abilities</h2>
+                </header>
                 <ol>
                     <li>Regenerative Healing Factor</li>
                     <li>Foreign Chemical Resistance</li>
@@ -45,7 +49,9 @@
                 </ol>
             </section>
             <section>
-                <h2>Deadpool's Weapons</h2>
+                <header>
+                    <h2>Deadpool's Weapons</h2>
+                </header>
                 <ul>
                     <li>Katanas</li>
                     <li>Grenades</li>
@@ -58,24 +64,29 @@
                 </ul>
             </section>
             <section>
-                <h2>Deadpool Friends</h2>
+                <header>
+                    <h2>Deadpool Friends</h2>
+                </header>
                 <ul>
-                    <li><a href="#">Wolverine</a></li>
-                    <li><a href="#">Cable</a></li>
-                    <li><a href="#">Domino</a></li>
-                    <li><a href="#">Spider-Man</a></li>
-                    <li><a href="#">Colossus</a></li>
+                    <li><a href="#" aria-label="Learn about Wolverine">Wolverine</a></li>
+                    <li><a href="#" aria-label="Learn about Cable">Cable</a></li>
+                    <li><a href="#" aria-label="Learn about Domino">Domino</a></li>
+                    <li><a href="#" aria-label="Learn about Spider-Man">Spider-Man</a></li>
+                    <li><a href="#" aria-label="Learn about Colossus">Colossus</a></li>
                 </ul>
             </section>
             <section>
-                <h2>Deadpool's Profile</h2>
+                <header>
+                    <h2>Deadpool's Profile</h2>
+                </header>
                 <article>
                     <p>Below is a table summarizing some key details about <strong>Deadpool</strong>. These details highlight his unique characteristics and background.</p>
                     <table border="1">
+                        <caption>Key Details About Deadpool</caption>
                         <thead>
                             <tr>
-                                <th><strong>Attribute</strong></th>
-                                <th><strong>Description</strong></th>
+                                <th scope="col"><strong>Attribute</strong></th>
+                                <th scope="col"><strong>Description</strong></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -103,8 +114,8 @@
                 </aside>
             </section>
         </main>
-        <footer>
-            <p>&copy; 2025 <strong>Deadpool</strong>. Learn more about <a href="https://en.wikipedia.org/wiki/Deadpool" target="_blank">Deadpool on Wikipedia</a>. Website developed by <em>Mohammed-Amine Madah</em>.</p>
+        <footer role="contentinfo">
+            <p>&copy; 2025 <strong>Deadpool</strong>. Learn more about <a href="https://en.wikipedia.org/wiki/Deadpool" target="_blank" aria-label="Read more about Deadpool on Wikipedia">Deadpool on Wikipedia</a>. Website developed by <em>Mohammed-Amine Madah</em>.</p>
         </footer>
     </body>
 </html>
