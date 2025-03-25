@@ -1,16 +1,16 @@
-/* Reset some default browser styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Ensure html and body take full width and height */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0; /* Remove default margins */
+    background-color: #13171B; /* Chinese Black */
+    color: #f4f4f4; /* Light text for contrast */
 }
 
 /* Set default font and background for the body */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
 /* Default container styling */
@@ -22,45 +22,151 @@ body {
 
 /* Default heading styles */
 h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 1rem;
+    margin: 1.5rem 0; /* Uniform spacing above and below headings */
     font-weight: bold;
 }
 
 /* Default paragraph styling */
 p {
-    margin-bottom: 1rem;
+    margin: 1rem 0; /* Uniform spacing above and below paragraphs */
 }
 
 /* Default link styling */
 a {
-    color: #007BFF;
+    color: #A32633; /* Japanese Carmine */
     text-decoration: none;
 }
 
 a:hover {
+    color: #962333; /* Slightly darker Japanese Carmine */
     text-decoration: underline;
 }
 
 /* Default list styling */
-ul {
-    list-style: none;
-    padding: 0;
+ul, ol {
+    margin: 1rem 0; /* Uniform spacing above and below lists */
+    padding-left: 1.5rem; /* Consistent indentation for lists */
 }
 
-ul li {
+ul li, ol li {
     margin-bottom: 0.5rem;
 }
 
-/* Default button styling */
-button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    border-radius: 5px;
+/* Header styling */
+header {
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box;
+    background-color: #20252C; /* Dark Gunmetal */
+    color: #f4f4f4; /* Light text for readability */
+    text-align: center;
+    padding: 2rem 0;
 }
 
-button:hover {
-    background-color: #0056b3;
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #ccc;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+header nav ul li a {
+    color: #f4f4f4; /* Light text for contrast */
+    background-color: #60262C; /* Caput Mortuum */
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #A32633; /* Japanese Carmine */
+    border-color: #A32633;
+}
+
+/* Circular profile picture with red ring */
+header figure img {
+    border-radius: 50%;
+    border: 5px solid #A32633; /* Japanese Carmine */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Main content styling */
+main {
+    padding: 2rem;
+    background-color: #343339; /* Jet */
+    color: #f4f4f4; /* Light text for readability */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+main section, main article {
+    margin-bottom: 2rem;
+}
+
+main h2 {
+    color: #A32633; /* Japanese Carmine */
+    margin: 1.5rem 0; /* Consistent spacing for headings in main */
+}
+
+main p, main ul, main ol {
+    margin: 1rem 0; /* Consistent spacing for paragraphs and lists in main */
+    line-height: 1.8;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0; /* Consistent spacing above and below tables */
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #A32633; /* Japanese Carmine */
+    color: #f4f4f4; /* Light text for contrast */
+}
+
+table td {
+    background-color: #20252C; /* Dark Gunmetal */
+    color: #f4f4f4; /* Light text for readability */
+}
+
+table caption {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+    width: 100%; /* Ensure full width */
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #20252C; /* Dark Gunmetal */
+    color: #f4f4f4; /* Light text for readability */
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #A32633; /* Japanese Carmine */
+}
+
+footer a:hover {
+    color: #962333; /* Slightly darker Japanese Carmine */
 }
