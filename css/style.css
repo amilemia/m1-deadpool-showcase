@@ -1,64 +1,67 @@
-/* Ensure html and body take full width and height */
+/* General Reset and Base Styles */
 html, body {
     width: 100%;
     height: 100%;
-    margin: 0; /* Remove default margins */
+    margin: 0;
     background-color: #20252C; /* Dark Gunmetal */
     color: #f4f4f4; /* Light text for contrast */
     font-family: Arial, sans-serif;
-    line-height: 1.6; /* Ensure good line height for readability */
+    line-height: 1.6;
 }
 
-/* Default container styling */
+/* Layout and Containers */
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Default heading styles */
+/* Typography */
 h1, h2, h3, h4, h5, h6 {
-    margin: 1.5rem 0; /* Uniform spacing above and below headings */
+    margin: 1.5rem 0;
     font-weight: bold;
 }
 
-/* Default paragraph styling */
-p {
-    margin: 1rem 0; /* Uniform spacing above and below paragraphs */
+p, ul, ol {
+    margin: 1rem 0;
+    line-height: 1.8; /* Unified line height for readability */
 }
 
-/* Default list styling */
 ul, ol {
-    margin: 1rem 0; /* Uniform spacing above and below lists */
-    padding-left: 1.5rem; /* Consistent indentation for lists */
+    padding-left: 1.5rem;
 }
 
 ul li, ol li {
     margin-bottom: 0.5rem;
 }
 
-/* Remove underline from all links */
+/* Links */
 a {
-    text-decoration: none; /* Remove underline from links */
+    text-decoration: none;
 }
 
-.about-header, .abilities-header, .weapons-header, .friends-header, .profile-header {
+a:hover {
+    text-decoration: underline; /* Add hover effect for better UX */
+}
+
+/* Section Headers */
+.about-header, .abilities-header, .weapons-header, .friends-header, .profile-header{
     background-color: #343339; /* Jet */
     text-align: center;
     padding: 2rem 0;
-    border:#962333 3px solid;
+    border: 3px solid #962333; /* Japanese Carmine */
     border-radius: 40px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     margin: 1rem auto;
     max-width: 85%;
 }
 
-/* Header styling */
+/* Header */
 header {
-    width: 100%; /* Ensure full width */
+    width: 100%;
     box-sizing: border-box;
-    background-color: #343339; /* Jet */
-    color: #f4f4f4; /* Light text for readability */
+    background-color: #343339;
+    color: #f4f4f4;
     text-align: center;
     padding: 2rem 0;
 }
@@ -75,7 +78,7 @@ header h2 {
 }
 
 header nav ul {
-    list-style-type: none; /* Remove markers for nav bar list items */
+    list-style: none;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
@@ -83,31 +86,29 @@ header nav ul {
 }
 
 header nav ul li a {
-    color: #13171B; /* Dark text for contrast */
-    background-color: #f4f4f4; /* Light background */
+    color: #13171B;
+    background-color: #f4f4f4;
     border: 7px solid transparent;
     border-radius: 10px;
     transition: background-color 0.3s, border-color 0.3s;
-    text-decoration: none; /* Ensure no underline in header links */
 }
 
 header nav ul li a:hover {
-    background-color: #ccc; /* Light gray for hover effect */
+    background-color: #ccc;
     border-color: #ccc;
 }
 
-/* Circular profile picture with red ring */
 header figure img {
     border-radius: 50%;
-    border: 5px solid #A32633; /* Japanese Carmine */
+    border: 5px solid #A32633;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Main content styling */
+/* Main Content */
 main {
     padding: 2rem;
-    background-color: #13171B; /* Chinese Black */
-    color: #f4f4f4; /* Light text for readability */
+    background-color: #13171B;
+    color: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 2rem auto;
@@ -119,20 +120,15 @@ main section, main article {
 }
 
 main h2 {
-    background-color: #343339; /* Jet */
-    margin: 1.5rem 0; /* Consistent spacing for headings in main */
+    background-color: #343339;
+    margin: 1.5rem 0;
 }
 
-main p, main ul, main ol {
-    margin: 1rem 0; /* Consistent spacing for paragraphs and lists in main */
-    line-height: 1.8;
-}
-
-/* Table styling */
+/* Tables */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 1.5rem 0; /* Consistent spacing above and below tables */
+    margin: 1.5rem 0;
 }
 
 table th, table td {
@@ -142,13 +138,13 @@ table th, table td {
 }
 
 table th {
-    background-color: #A32633; /* Japanese Carmine */
-    color: #f4f4f4; /* Light text for contrast */
+    background-color: #A32633;
+    color: #f4f4f4;
 }
 
 table td {
-    background-color: #20252C; /* Dark Gunmetal */
-    color: #f4f4f4; /* Light text for readability */
+    background-color: #20252C;
+    color: #f4f4f4;
 }
 
 table caption {
@@ -156,40 +152,44 @@ table caption {
     font-weight: bold;
 }
 
-/* Footer styling */
+/* Footer */
 footer {
-    width: 100%; /* Ensure full width */
+    width: 100%;
     text-align: center;
     padding: 1rem 0;
-    background-color: #343339; /* Jet */
-    color: #f4f4f4; /* Light text for readability */
+    background-color: #343339;
+    color: #f4f4f4;
     margin-top: 2rem;
 }
 
 footer a {
-    color: #f4f4f4; /* Light text for better visibility */
-    background-color: #A32633; /* Japanese Carmine for consistency */
-    padding: 0.2rem 0.5rem; /* Add slight padding for better readability */
-    border-radius: 3px; /* Subtle rounded edges */
-    text-decoration: none; /* Ensure no underline in footer links */
+    color: #f4f4f4;
+    background-color: #A32633;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
 }
 
 footer a:hover {
-    color: #f4f4f4; /* Keep light text for hover */
-    background-color: #962333; /* Slightly darker Japanese Carmine for hover effect */
+    background-color: #962333;
 }
 
-/* Friends section links */
+/* Friends Section */
 .friends-section a {
-    color: #f4f4f4; /* Light text for contrast */
-    background-color: #A32633; /* Japanese Carmine */
+    color: #f4f4f4;
+    background-color: #A32633;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    text-decoration: none; /* Ensure no underline in friends section links */
     transition: background-color 0.3s, color 0.3s;
 }
 
+.friends-section li {
+    list-style: none;
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+}
+
 .friends-section a:hover {
-    background-color: #962333; /* Slightly darker Japanese Carmine */
-    color: #fff; /* Ensure good contrast on hover */
+    background-color: #962333;
+    color: #fff;
 }
