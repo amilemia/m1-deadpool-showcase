@@ -167,12 +167,16 @@ footer {
 }
 
 footer a {
-    color: #A32633; /* Japanese Carmine */
+    color: #f4f4f4; /* Light text for better visibility */
+    background-color: #A32633; /* Japanese Carmine for consistency */
+    padding: 0.2rem 0.5rem; /* Add slight padding for better readability */
+    border-radius: 3px; /* Subtle rounded edges */
     text-decoration: none; /* Ensure no underline in footer links */
 }
 
 footer a:hover {
-    color: #962333; /* Slightly darker Japanese Carmine */
+    color: #f4f4f4; /* Keep light text for hover */
+    background-color: #962333; /* Slightly darker Japanese Carmine for hover effect */
 }
 
 /* Friends section links */
