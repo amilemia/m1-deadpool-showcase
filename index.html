@@ -12,71 +12,26 @@
     </head>
     <body>
         <header role="banner">
-            <figure>
-                <img src="img/deadpool.jpg" alt="Deadpool's profile picture, a Marvel antihero known for his humor and abilities" width="300" height="300" loading="lazy">
-                <figcaption>Deadpool Profile Picture - Marvel Antihero</figcaption>
-            </figure>
-            <h1>Deadpool</h1>
-            <h2><em>The Merc with a Mouth</em></h2>
-            <nav role="navigation" aria-label="Main Navigation">
-                <ul>
-                    <li><a href="#" aria-label="Go to Home section">Home</a></li>
-                    <li><a href="#" aria-label="Learn more About Deadpool">About</a></li>
-                    <li><a href="#" aria-label="Contact Deadpool">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="header-container">
+                <figure>
+                    <img src="img/deadpool.jpg" alt="Deadpool's profile picture, a Marvel antihero known for his humor and abilities" width="150" height="150" loading="lazy">
+                </figure>
+                <div class="header-text">
+                    <h1>Deadpool</h1>
+                    <h2><em>The Merc with a Mouth</em></h2>
+                </div>
+            </div>
+                <nav class="nav-container" role="navigation" aria-label="Main Navigation">
+                    <ul>
+                        <li><a href="#profile" aria-label="Go to Deadpool's Profile section">Profile</a></li>
+                        <li><a href="#abilities" aria-label="Go to Deadpool's Abilities section">Abilities</a></li>
+                        <li><a href="#about-deadpool" aria-label="Go to About Deadpool section">About</a></li>
+                        <li><a href="#weapons" aria-label="Go to Deadpool's Weapons section">Weapons</a></li>
+                        <li><a href="#friends" aria-label="Go to Deadpool's Friends section">Friends</a></li>
+                    </ul>
+                </nav>
         </header>
         <main role="main">
-            <section aria-labelledby="about-deadpool">
-                <header class="about-header">
-                    <h2 id="about-deadpool"><strong>About Deadpool</strong></h2>
-                </header>
-                <p><strong>Deadpool</strong> is a fictional character appearing in American comic books published by Marvel Comics. Created by writer <em>Fabian Nicieza</em> and artist/writer <em>Rob Liefeld</em>, the character first appeared in <strong>The New Mutants #98</strong> (cover-dated February 1991). Initially, <strong>Deadpool</strong> was depicted as a supervillain when he made his first appearance in <strong>The New Mutants</strong> and later in issues of <strong>X-Force</strong>, but later evolved into his more recognizable antiheroic persona. <strong>Deadpool</strong>, whose real name is <strong>Wade Winston Wilson</strong>, is a disfigured mercenary with the superhuman ability of an accelerated healing factor and physical prowess. The character is known as the <em>"Merc with a Mouth"</em> because of his tendency to talk and joke constantly, including breaking the <strong>fourth wall</strong> for humorous effect and running gags.</p>
-            </section>
-            <article aria-labelledby="abilities">
-                <header class="abilities-header">
-                    <h2 id="abilities">Deadpool's Abilities</h2>
-                </header>
-                <ol>
-                    <li>Regenerative Healing Factor - Allows Deadpool to recover from injuries quickly.</li>
-                    <li>Foreign Chemical Resistance - Immunity to most toxins and drugs.</li>
-                    <li>Superhuman Strength</li>
-                    <li>Superhuman Stamina</li>
-                    <li>Superhuman Agility</li>
-                    <li>Superhuman Reflexes</li>
-                    <li>Master Martial Artist</li>
-                    <li>Master Assassin</li>
-                    <li>Weapons Proficiency</li>
-                    <li>4th Wall Awareness</li>
-                </ol>
-            </article>
-            <article aria-labelledby="weapons">
-                <header class="weapons-header">
-                    <h2 id="weapons">Deadpool's Weapons</h2>
-                </header>
-                <ul>
-                    <li>Katanas - Deadpool's signature swords for close combat.</li>
-                    <li>Grenades</li>
-                    <li>Machine Guns</li>
-                    <li>Handguns</li>
-                    <li>Knives</li>
-                    <li>Explosives</li>
-                    <li>Teleportation Device</li>
-                    <li>Unicorn</li>
-                </ul>
-            </article>
-            <section aria-labelledby="friends" class="friends-section">
-                <header class="friends-header">
-                    <h2 id="friends">Deadpool Friends</h2>
-                </header>
-                <ul>
-                    <li><a href="#" aria-label="Learn about Wolverine, a mutant with regenerative abilities">Wolverine</a></li>
-                    <li><a href="#" aria-label="Learn about Cable">Cable</a></li>
-                    <li><a href="#" aria-label="Learn about Domino">Domino</a></li>
-                    <li><a href="#" aria-label="Learn about Spider-Man">Spider-Man</a></li>
-                    <li><a href="#" aria-label="Learn about Colossus">Colossus</a></li>
-                </ul>
-            </section>
             <section aria-labelledby="profile">
                 <header class="profile-header">
                     <h2 id="profile">Deadpool's Profile</h2>
@@ -115,9 +70,150 @@
                     <p><em>Fun Fact:</em> <strong>Deadpool</strong> often breaks the <strong>fourth wall</strong>, making him one of the most unique characters in the Marvel Universe.</p>
                 </aside>
             </section>
+            <article aria-labelledby="abilities">
+                <header class="abilities-header">
+                    <h2 id="abilities">Deadpool's Abilities</h2>
+                </header>
+                <section class="cards">
+                    <div class="card">
+                        <h3>Regenerative Healing Factor</h3>
+                        <p>Allows Deadpool to recover from injuries quickly.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Superhuman Strength</h3>
+                        <p>Deadpool possesses strength beyond human limits.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Foreign Chemical Resistance</h3>
+                        <p>Immunity to most toxins and drugs.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Superhuman Stamina</h3>
+                        <p>Deadpool can exert himself for extended periods without fatigue.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Superhuman Agility</h3>
+                        <p>Exceptional flexibility and reflexes for combat and evasion.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Superhuman Reflexes</h3>
+                        <p>React to threats and attacks with incredible speed.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Master Martial Artist</h3>
+                        <p>Highly skilled in various forms of hand-to-hand combat.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Master Assassin</h3>
+                        <p>Expert in stealth, infiltration, and assassination techniques.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Weapons Proficiency</h3>
+                        <p>Proficient with a wide range of weapons, from swords to firearms.</p>
+                    </div>
+                    <div class="card">
+                        <h3>4th Wall Awareness</h3>
+                        <p>Unique ability to break the fourth wall and interact with the audience.</p>
+                    </div>
+                </section>
+            </article>
+            <section aria-labelledby="about-deadpool">
+                <header class="about-header">
+                    <h2 id="about-deadpool"><strong>About Deadpool</strong></h2>
+                </header>
+                <p><strong>Deadpool</strong> is a fictional character appearing in American comic books published by Marvel Comics. Created by writer <em>Fabian Nicieza</em> and artist/writer <em>Rob Liefeld</em>, the character first appeared in <strong>The New Mutants #98</strong> (cover-dated February 1991). Initially, <strong>Deadpool</strong> was depicted as a supervillain when he made his first appearance in <strong>The New Mutants</strong> and later in issues of <strong>X-Force</strong>, but later evolved into his more recognizable antiheroic persona. <strong>Deadpool</strong>, whose real name is <strong>Wade Winston Wilson</strong>, is a disfigured mercenary with the superhuman ability of an accelerated healing factor and physical prowess. The character is known as the <em>"Merc with a Mouth"</em> because of his tendency to talk and joke constantly, including breaking the <strong>fourth wall</strong> for humorous effect and running gags.</p>
+            </section>
+            <article aria-labelledby="weapons">
+                <header class="weapons-header">
+                    <h2 id="weapons">Deadpool's Weapons</h2>
+                </header>
+                <section class="cards">
+                    <div class="card">
+                        <h3>Katanas</h3>
+                        <p>Deadpool's signature swords for close combat.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Grenades</h3>
+                        <p>Explosive devices for large-scale damage.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Machine Guns</h3>
+                        <p>Rapid-fire weapons for ranged combat.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Handguns</h3>
+                        <p>Versatile firearms for precision shooting.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Knives</h3>
+                        <p>Sharp blades for stealth and close combat.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Explosives</h3>
+                        <p>Various bombs for tactical destruction.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Teleportation Device</h3>
+                        <p>Used for quick escapes and surprise attacks.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Unicorn</h3>
+                        <p>A humorous and symbolic item Deadpool cherishes.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Bo Staff</h3>
+                        <p>A melee weapon for versatile combat.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Shurikens</h3>
+                        <p>Throwing stars for ranged attacks.</p>
+                    </div>
+                </section>
+            </article>
+            <section aria-labelledby="friends" class="friends-section">
+                <header class="friends-header">
+                    <h2 id="friends">Deadpool Friends</h2>
+                </header>
+                <section class="cards">
+                    <div class="card">
+                        <h3><a href="#" target="_blank" aria-label="Learn about Wolverine, a mutant with regenerative abilities">Wolverine</a></h3>
+                        <p>A mutant with regenerative healing and adamantium claws.</p>
+                    </div>
+                    <div class="card">
+                        <h3><a href="#" target="_blank" aria-label="Learn about Cable">Cable</a></h3>
+                        <p>A time-traveling mutant with telekinetic and cybernetic abilities.</p>
+                    </div>
+                    <div class="card">
+                        <h3><a href="#" target="_blank" aria-label="Learn about Domino">Domino</a></h3>
+                        <p>A mercenary with the ability to manipulate luck in her favor.</p>
+                    </div>
+                    <div class="card">
+                        <h3><a href="#" target="_blank" aria-label="Learn about Spider-Man">Spider-Man</a></h3>
+                        <p>A superhero with spider-like abilities and a witty personality.</p>
+                    </div>
+                    <div class="card">
+                        <h3><a href="#" target="_blank" aria-label="Learn about Colossus">Colossus</a></h3>
+                        <p>A mutant with the ability to transform his body into organic steel.</p>
+                    </div>
+                    <div class="card">
+                        <h3><a href="#" target="_blank" aria-label="Learn about Black Widow">Black Widow</a></h3>
+                        <p>A highly skilled spy and combatant with a mysterious past.</p>
+                    </div>
+                    <div class="card">
+                        <h3><a href="#" target="_blank" aria-label="Learn about Hawkeye">Hawkeye</a></h3>
+                        <p>A master archer with unparalleled precision and skill.</p>
+                    </div>
+                </section>
+            </section>
         </main>
         <footer role="contentinfo">
             <p>&copy; 2025 <strong>Deadpool</strong>. Learn more about <a href="https://en.wikipedia.org/wiki/Deadpool" target="_blank" aria-label="Read more about Deadpool on Wikipedia">Deadpool on Wikipedia</a>. Website developed by <em>Mohammed-Amine Madah</em>.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/mohammed-amine-madah-b88851243/" target="_blank"><img src="img/linkedin-icon.png" alt="Linkedin"></a>
+                <a href="#" target="_blank"><img src="img/facebook-icon.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="img/x-icon.png" alt="X"></a>
+                <a href="#" target="_blank"><img src="img/instagram-icon.png" alt="Instagram"></a>
+            </div>
         </footer>
     </body>
 </html>

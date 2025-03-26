@@ -3,10 +3,15 @@ html, body {
     width: 100%;
     height: 100%;
     margin: 0;
+    padding: 0;
     background-color: #20252C; /* Dark Gunmetal */
     color: #f4f4f4; /* Light text for contrast */
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    scroll-behavior: smooth; /* Smooth scrolling for better UX */
+    display: block; /* Ensure it behaves as a block element */
+    min-height: 100px; /* Set a minimum height */
+    overflow: visible; /* Ensure no overflow restrictions */
 }
 
 /* Layout and Containers */
@@ -44,6 +49,40 @@ a:hover {
     text-decoration: underline; /* Add hover effect for better UX */
 }
 
+.cards {
+    display: flex; /* Use flexbox for better alignment */
+    flex-wrap: wrap; /* Allow wrapping to the next line */
+    justify-content: center; /* Center-align cards */
+    gap: 1.5rem; /* Maintain spacing between cards */
+    margin: 2rem 0;
+}
+
+.card {
+    flex: 1 1 calc(33.333% - 1.5rem); /* Ensure cards take up equal space */
+    max-width: calc(33.333% - 1.5rem); /* Prevent cards from exceeding their allocated space */
+    background-color: #343339;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: #A32633;
+}
+
+.card p {
+    color: #f4f4f4;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
 /* Section Headers */
 .about-header, .abilities-header, .weapons-header, .friends-header, .profile-header{
     background-color: #343339; /* Jet */
@@ -53,7 +92,7 @@ a:hover {
     border-radius: 40px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     margin: 1rem auto;
-    max-width: 85%;
+    max-width: 90%;
 }
 
 /* Header */
@@ -64,6 +103,10 @@ header {
     color: #f4f4f4;
     text-align: center;
     padding: 2rem 0;
+    display: block; /* Ensure it behaves as a block element */
+    min-height: 100px; /* Set a minimum height */
+    overflow: visible; /* Ensure no overflow restrictions */
+    position: static; /* Reset position */
 }
 
 header h1 {
@@ -77,12 +120,23 @@ header h2 {
     color: #ccc;
 }
 
+/* Sticky Navigation */
+.nav-container {
+    position: sticky; /* Ensures the navigation sticks */
+    top: 0; /* Sticks to the top of the viewport */
+    z-index: 1000; /* Ensures it stays above other elements */
+    background-color: #343339; /* Background color for visibility */
+    padding: 1rem 0; /* Add padding for spacing */
+    margin: 0; /* Ensure no margin conflicts */
+}
+
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin-top: 1rem;
+    margin: 0; /* Ensure no margin conflicts */
+    padding: 1rem 0; /* Add padding for spacing */
 }
 
 header nav ul li a {
@@ -94,14 +148,88 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #ccc;
-    border-color: #ccc;
+    background-color: #444; /* Subtle dark gray background */
+    color: #f4f4f4; /* Maintain light text for contrast */
+    transform: scale(1.05); /* Keep the slight scaling effect */
+}
+
+/* Active link styling */
+header nav ul li a.active {
+    background-color: #A32633;
+    color: #f4f4f4;
 }
 
 header figure img {
     border-radius: 50%;
     border: 5px solid #A32633;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Header Section */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    background-color: #343339;
+    color: #f4f4f4;
+}
+
+.header-container figure {
+    margin: 0;
+    text-align: center;
+}
+
+.header-container img {
+    border-radius: 50%;
+    border: 5px solid #A32633;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-container .header-text {
+    text-align: left;
+}
+
+.header-container h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.header-container h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #ccc;
+    margin: 0.5rem 0 0;
+}
+
+/* Navigation Bar */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: #f4f4f4;
+    background-color: #A32633;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #962333;
+    transform: scale(1.05);
+}
+
+/* Active link styling */
+header nav ul li a.active {
+    background-color: #f4f4f4;
+    color: #A32633;
 }
 
 /* Main Content */
@@ -173,6 +301,32 @@ footer a:hover {
     background-color: #962333;
 }
 
+footer .social-icons {
+    margin-top: 1rem;
+}
+
+footer .social-icons a {
+    margin: 0 0.5rem;
+    display: inline-flex; /* Use flexbox for centering */
+    align-items: center; /* Center image vertically */
+    justify-content: center; /* Center image horizontally */
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    background-color: #A32633; /* Ensure background color matches */
+    border-radius: 50%; /* Make the background fully rounded */
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+footer .social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.2);
+}
+
 /* Friends Section */
 .friends-section a {
     color: #f4f4f4;
@@ -192,4 +346,29 @@ footer a:hover {
 .friends-section a:hover {
     background-color: #962333;
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        gap: 1rem;
+    }
+
+    .card {
+        flex: 1 1 100%; /* Cards take full width on small screens */
+        max-width: 100%;
+    }
 }
