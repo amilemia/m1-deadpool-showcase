@@ -347,6 +347,10 @@ footer .social-icons img:hover {
         padding: 0.75rem 1.25rem;
         font-size: 1.1rem;
     }
+    /* Adjust anchor scroll offset on large screens so headers align at the top */
+    h2[id] {
+        scroll-margin-top: 170px;
+    }
 }
 
 /* Additional Responsiveness */
@@ -392,6 +396,9 @@ footer .social-icons img:hover {
     .card p {
         font-size: 0.9rem; /* adjust text size */
     }
+    h2[id] {
+        scroll-margin-top: 80px; /* Adjust mobile offset */
+    }
 }
 
 /* Tablet devices (min-width: 768px and max-width: 1199px) */
@@ -430,6 +437,9 @@ footer .social-icons img:hover {
     }
     .card p {
         font-size: 1rem;
+    }
+    h2[id] {
+        scroll-margin-top: 80px; /* Adjust tablet offset */
     }
 }
 
