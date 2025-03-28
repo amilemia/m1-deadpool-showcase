@@ -21,16 +21,31 @@
                     <h2><em>The Merc with a Mouth</em></h2>
                 </div>
             </div>
-                <nav class="nav-container" role="navigation" aria-label="Main Navigation">
-                    <ul>
-                        <li><a href="#profile" aria-label="Go to Deadpool's Profile section">Profile</a></li>
-                        <li><a href="#abilities" aria-label="Go to Deadpool's Abilities section">Abilities</a></li>
-                        <li><a href="#about-deadpool" aria-label="Go to About Deadpool section">About</a></li>
-                        <li><a href="#weapons" aria-label="Go to Deadpool's Weapons section">Weapons</a></li>
-                        <li><a href="#friends" aria-label="Go to Deadpool's Friends section">Friends</a></li>
-                    </ul>
-                </nav>
         </header>
+        <!-- Desktop nav bar (visible on larger screens) -->
+        <nav class="nav-container" role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#profile" aria-label="Go to Deadpool's Profile section">Profile</a></li>
+                <li><a href="#abilities" aria-label="Go to Deadpool's Abilities section">Abilities</a></li>
+                <li><a href="#about-deadpool" aria-label="Go to About Deadpool section">About</a></li>
+                <li><a href="#weapons" aria-label="Go to Deadpool's Weapons section">Weapons</a></li>
+                <li><a href="#friends" aria-label="Go to Deadpool's Friends section">Friends</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile/Tablet Navigation (visible on screens below 1200px) -->
+        <div class="mobile-nav" id="mobile-nav">
+            <nav>
+                <ul>
+                    <li><a href="#profile" aria-label="Go to Deadpool's Profile section">Profile</a></li>
+                    <li><a href="#abilities" aria-label="Go to Deadpool's Abilities section">Abilities</a></li>
+                    <li><a href="#about-deadpool" aria-label="Go to About Deadpool section">About</a></li>
+                    <li><a href="#weapons" aria-label="Go to Deadpool's Weapons section">Weapons</a></li>
+                    <li><a href="#friends" aria-label="Go to Deadpool's Friends section">Friends</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Hamburger Toggle Button -->
+        <button id="hamburger-toggle" aria-label="Open navigation menu">☰</button>
         <main role="main">
             <section aria-labelledby="profile">
                 <header class="profile-header">
@@ -215,5 +230,7 @@
                 <a href="#" target="_blank"><img src="img/instagram-icon.png" alt="Instagram"></a>
             </div>
         </footer>
+        <!-- Removed inline script; added external script reference -->
+        <script src="js/script.js"></script>
     </body>
 </html>
