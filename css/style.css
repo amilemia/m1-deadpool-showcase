@@ -146,7 +146,7 @@ header h2 {
     margin: 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.5);
     transition: background-color 0.3s;
-    border-bottom: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color); /* keeps deadpool red as border */
 }
 
 .nav-container ul {
@@ -158,10 +158,10 @@ header h2 {
     padding: 1rem 0; /* Add padding for spacing */
 }
 
+/* Consolidated Nav Link Styles */
 .nav-container ul li a {
-    color: var(--text-color); /* Light text */
+    color: var(--text-color);
     background: linear-gradient(45deg, var(--background-color), var(--primary-color));
-    border: 2px solid transparent;
     border-radius: 20px;
     font-weight: bold;
     padding: 0.75rem 1.8rem;
@@ -170,15 +170,15 @@ header h2 {
 }
 
 .nav-container ul li a:hover {
-    background-color: var(--accent-color); /* Slightly lighter on hover */
     transform: translateY(-2px);
+    /* Reversed gradient order to remove the unwanted red stripe */
     background: linear-gradient(45deg, var(--accent-color), var(--secondary-color));
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
 /* Active link styling */
 .nav-container ul li a.active {
-    background-color: #A32633;
+    background-color: var(--secondary-color);
     color: var(--text-color);
 }
 
