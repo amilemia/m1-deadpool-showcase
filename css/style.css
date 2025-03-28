@@ -304,7 +304,7 @@ footer .social-icons a {
     height: 50px; /* Set a fixed height */
     background-color: #A32633; /* Ensure background color matches */
     border-radius: 50%; /* Make the background fully rounded */
-    transition: transform 0.3s, background-color 0.3s;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
 
 footer .social-icons img {
@@ -315,6 +315,11 @@ footer .social-icons img {
 
 footer .social-icons img:hover {
     transform: scale(1.2);
+}
+
+footer .social-icons a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* Friends Section */

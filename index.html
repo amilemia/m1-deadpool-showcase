@@ -15,7 +15,11 @@
         <header role="banner">
             <div class="header-container">
                 <figure>
-                    <img src="img/deadpool.jpg" alt="Deadpool's profile picture, a Marvel antihero known for his humor and abilities" width="150" height="150" loading="lazy">
+                    <!-- Added srcset for responsive image loading -->
+                    <img src="img/deadpool.jpg" 
+                         srcset="img/deadpool-small.jpg 480w, img/deadpool.jpg 800w" 
+                         alt="Deadpool profile picture with a humorous expression" 
+                         width="150" height="150" loading="lazy">
                 </figure>
                 <div class="header-text">
                     <h1>Deadpool</h1>
