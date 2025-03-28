@@ -21,3 +21,4 @@ mobileLinks.forEach(link => {
         toggleButton.setAttribute('aria-label', 'Open navigation menu');
     });
 });
+// Transitions are now handled via CSS for a smoother experience

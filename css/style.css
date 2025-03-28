@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #13171B;
+    --secondary-color: #A32633;
+    --accent-color: #343339;
+    --background-color: #20252C;
+    --text-color: #f4f4f4;
+}
+
 /* Add a universal box-sizing reset */
 * {
     box-sizing: border-box;
@@ -9,9 +17,9 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;  /* removed horizontal padding */
-    background-color: #20252C; /* Dark Gunmetal */
-    color: #f4f4f4; /* Light text for contrast */
-    font-family: Arial, sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif; /* Updated font */
     line-height: 1.6;
     scroll-behavior: smooth; /* Smooth scrolling for better UX */
     display: block; /* Ensure it behaves as a block element */
@@ -66,11 +74,12 @@ a:hover {
 .card {
     flex: 1 1 calc(33.333% - 1.5rem); /* Ensure cards take up equal space */
     max-width: calc(33.333% - 1.5rem); /* Prevent cards from exceeding their allocated space */
-    background-color: #343339;
+    background-color: var(--accent-color);
     padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card h3 {
@@ -79,19 +88,18 @@ a:hover {
 }
 
 .card p {
-    color: #f4f4f4;
+    color: var(--text-color);
 }
 
 /* Hover effect for cards */
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 /* Section Headers */
 .about-header, .abilities-header, .weapons-header, .friends-header, .profile-header{
-    background-color: #343339; /* Jet */
+    background-color: var(--accent-color); /* Jet */
     text-align: center;
     padding: 2rem 0;
     border: 3px solid #962333; /* Japanese Carmine */
@@ -105,8 +113,8 @@ a:hover {
 header {
     width: 100%;
     box-sizing: border-box;
-    background-color: #343339;
-    color: #f4f4f4;
+    background-color: var(--accent-color);
+    color: var(--text-color);
     text-align: center;
     padding: 2rem 0;
     display: block; /* Ensure it behaves as a block element */
@@ -133,9 +141,11 @@ header h2 {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #13171B; /* Ensures visibility when sticky */
+    background-color: var(--primary-color); /* Ensures visibility when sticky */
     padding: 1rem 0;
     margin: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    transition: background-color 0.3s;
 }
 
 .nav-container ul {
@@ -148,23 +158,23 @@ header h2 {
 }
 
 .nav-container ul li a {
-    color: #f4f4f4; /* Light text */
-    background-color: #20252C; /* Dark background */
+    color: var(--text-color); /* Light text */
+    background-color: var(--background-color); /* Dark background */
     border: 2px solid transparent; /* Reduced border */
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 0.5rem 1rem;
-    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .nav-container ul li a:hover {
-    background-color: #343339; /* Slightly lighter on hover */
-    transform: scale(1.05);
+    background-color: var(--accent-color); /* Slightly lighter on hover */
+    transform: translateY(-2px);
 }
 
 /* Active link styling */
 .nav-container ul li a.active {
     background-color: #A32633;
-    color: #f4f4f4;
+    color: var(--text-color);
 }
 
 header figure img {
@@ -180,8 +190,8 @@ header figure img {
     justify-content: center;
     gap: 1.5rem;
     padding: 2rem 0;
-    background-color: #343339;
-    color: #f4f4f4;
+    background-color: var(--accent-color);
+    color: var(--text-color);
 }
 
 .header-container figure {
@@ -216,8 +226,8 @@ main {
     margin: 2rem auto;
     max-width: 800px;
     padding: 2rem;
-    background-color: #13171B;
-    color: #f4f4f4;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-top: 1px solid transparent;
@@ -228,7 +238,7 @@ main section, main article {
 }
 
 main h2 {
-    background-color: #343339;
+    background-color: var(--accent-color);
     margin: 1.5rem 0;
 }
 
@@ -247,12 +257,12 @@ table th, table td {
 
 table th {
     background-color: #A32633;
-    color: #f4f4f4;
+    color: var(--text-color);
 }
 
 table td {
-    background-color: #20252C;
-    color: #f4f4f4;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 table caption {
@@ -265,13 +275,13 @@ footer {
     width: 100%;
     text-align: center;
     padding: 1rem 0;
-    background-color: #343339;
-    color: #f4f4f4;
+    background-color: var(--accent-color);
+    color: var(--text-color);
     margin-top: 2rem;
 }
 
 footer a {
-    color: #f4f4f4;
+    color: var(--text-color);
     background-color: #A32633;
     padding: 0.2rem 0.5rem;
     border-radius: 3px;
@@ -309,7 +319,7 @@ footer .social-icons img:hover {
 
 /* Friends Section */
 .friends-section a {
-    color: #f4f4f4;
+    color: var(--text-color);
     background-color: #A32633;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -468,8 +478,8 @@ footer .social-icons img:hover {
 
 /* Mobile Navigation Base Styles */
 .mobile-nav {
-    background-color: #13171B;
-    color: #f4f4f4;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     width: 200px;           /* desired width for mobile nav */
     height: 100%;
     padding: 2rem 1rem;
@@ -498,8 +508,8 @@ footer .social-icons img:hover {
 }
 
 .mobile-nav nav ul li a {
-    color: #f4f4f4;
-    background-color: #20252C;
+    color: var(--text-color);
+    background-color: var(--background-color);
     padding: 0.5rem 1rem;
     border-radius: 5px;
     display: block;
@@ -508,7 +518,7 @@ footer .social-icons img:hover {
 }
 
 .mobile-nav nav ul li a:hover {
-    background-color: #343339;
+    background-color: var(--accent-color);
 }
 
 /* Responsive Overrides for Mobile & Tablet */
@@ -522,13 +532,18 @@ footer .social-icons img:hover {
         top: 1rem;
         left: 1rem;
         z-index: 1200;
-        background: #13171B;
-        border: 2px solid #A32633;
-        border-radius: 5px;
-        padding: 0.5rem 1rem;
+        background: var(--primary-color);
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        transition: transform 0.3s ease;
         font-size: 1.5rem;
-        color: #f4f4f4;
+        color: var(--text-color);
         cursor: pointer;
+    }
+    #hamburger-toggle:hover {
+        transform: scale(1.1);
     }
 }
 @media (min-width: 1200px) {
@@ -551,7 +566,7 @@ footer .social-icons img:hover {
         left: -200px;  /* hidden by default */
         width: 200px;  /* adjust width as needed */
         height: 100%;
-        background-color: #13171B;
+        background-color: var(--primary-color);
         padding: 2rem 1rem;
         transition: left 0.3s ease;
         z-index: 1100;
@@ -570,13 +585,18 @@ footer .social-icons img:hover {
         top: 1rem;
         left: 1rem;
         z-index: 1200;
-        background: #13171B;
-        border: 2px solid #A32633;
-        border-radius: 5px;
-        padding: 0.5rem 1rem;
+        background: var(--primary-color);
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        transition: transform 0.3s ease;
         font-size: 1.5rem;
-        color: #f4f4f4;
+        color: var(--text-color);
         cursor: pointer;
+    }
+    #hamburger-toggle:hover {
+        transform: scale(1.1);
     }
 }
 @media (min-width: 1200px) {
