@@ -19,7 +19,7 @@ html, body {
     padding: 0;  /* removed horizontal padding */
     background: var(--background-color);
     color: var(--text-color);
-    font-family: 'Roboto', sans-serif; /* Updated font */
+    font-family: 'Roboto Slab', serif;  /* updated for better readability */
     line-height: 1.6;
     scroll-behavior: smooth; /* Smooth scrolling for better UX */
     display: block; /* Ensure it behaves as a block element */
