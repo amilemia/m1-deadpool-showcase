@@ -176,12 +176,6 @@ header h2 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
-/* Active link styling */
-.nav-container ul li a.active {
-    background-color: var(--secondary-color); /* updated from #A32633 */
-    color: var(--text-color);
-}
-
 header figure img {
     border-radius: 50%;
     border: 5px solid var(--secondary-color); /* updated from #A32633 */
