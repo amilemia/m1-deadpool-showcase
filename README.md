@@ -6,5 +6,5 @@
 |------------|---------------|----------------|------------------------------------|
 | Understand document structure, basic tags (headings, paragraphs, links, images). | Week 1 | Finished | <ul><li>[X] Done</li><li>[ ] To-Do</li></ul>
 | Dive into CSS basics—selectors, properties, colors, fonts, and box model. | Week 2 | Finished | <ul><li>[X] Done</li><li>[ ] To-Do</li></ul>
-| Responsive design fundamentals (media queries) and layout techniques (Flexbox). | Week 3 | Work in progress | <ul><li>[ ] Done</li><li>[X] To-Do</li></ul>
-| Combine skills to build a multi-page static site. | Week 4 | Work in progress | <ul><li>[ ] Done</li><li>[X] To-Do</li></ul>
+| Responsive design fundamentals (media queries) and layout techniques (Flexbox). | Week 3 | Finished | <ul><li>[X] Done</li><li>[ ] To-Do</li></ul>
+| Combine skills to build a multi-page static site. | Week 4 | Finished | <ul><li>[X] Done</li><li>[ ] To-Do</li></ul>
